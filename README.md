@@ -13,3 +13,7 @@
    ```bash
    g++ nome_do_arquivo.cpp -o executavel
    ```
+   ##### Execução:
+   ```bash
+   ./executavel
+   ```
