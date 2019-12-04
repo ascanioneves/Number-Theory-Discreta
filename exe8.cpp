@@ -6,13 +6,11 @@ int modulo_positive(int a, int n)
 	a %= n;
 	return a < 0 ? a + n : a;
 }
-
 void modulo_make_positive(int &a, int n)
 {
 	a %= n;
 	if (a < 0) a += n;
 }
-
 int gcd(int a, int b)
 {
 	int r;
@@ -23,7 +21,6 @@ int gcd(int a, int b)
 
 	return b;
 }
-
 int _gcd_loop_(int a, int b, int& x, int& y)
 {
 	int a1 = a, b1 = b;
@@ -65,7 +62,6 @@ int _gcd_loop_(int a, int b, int& x, int& y)
 
 	return b1;
 }
-
 int _gcd_recur_(int a, int b, int& x, int& y)
 {
 	int r = a % b;
@@ -93,7 +89,6 @@ int _gcd_recur_(int a, int b, int& x, int& y)
 		return g;
 	}
 }
-
 int gcd_recursion(int a, int b, int& x, int& y)
 {
 	int a1 = a, b1 = b;
@@ -107,7 +102,6 @@ int gcd_recursion(int a, int b, int& x, int& y)
 
 	return g;
 }
-
 int gcd_loop(int a, int b, int& x, int& y)
 {
 	int g = _gcd_loop_(a, b, x, y);
@@ -119,7 +113,6 @@ int gcd_loop(int a, int b, int& x, int& y)
 	else
 		return g;
 }
-
 vector<int> LinearCongruence(int a, int k, int b)
 {
 	vector<int> sol;
@@ -161,7 +154,6 @@ vector<int> LinearCongruence(int a, int k, int b)
 	return sol;
 
 }
-
 ostream& operator<<(ostream& os, const vector<int>& v)
 {
 	if (v.empty()) return os;
@@ -177,8 +169,6 @@ ostream& operator<<(ostream& os, const vector<int>& v)
 
 	return os;
 }
-
-
 int main()
 {
 	int a, b, m;
